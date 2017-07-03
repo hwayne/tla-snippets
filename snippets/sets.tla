@@ -35,3 +35,6 @@ SetMaxBy(set, Op(_)) ==
   CHOOSE x \in set:
     \A y \in set:
       Op(y) <= Op(x)
+
+\* Useful for duplicating model values
+SetOf(type, count) == {<<type, n>>: n \in 1..count}
