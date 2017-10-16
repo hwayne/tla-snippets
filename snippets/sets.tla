@@ -4,6 +4,8 @@
 set -- elem == set \ {elem}
 set ++ elem == set \union {elem}
 
+Empty(set) == set = {}
+
 \* REDUCE
 Pick(set) == CHOOSE s \in set : TRUE
 
