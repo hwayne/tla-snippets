@@ -38,7 +38,7 @@ Pop(seq) == SubSeq(seq, 1, Len(seq)-1)
   So to do modular arithmetic on sequences we need to
   map 0 to b
 *)
-SeqMod(a, b) == IF a % b = 0 THEN b else a % b
+SeqMod(a, b) == IF a % b = 0 THEN b ELSE a % b
 
 \* If you prefer an infix
 a %% b = SeqMod(a, b)
